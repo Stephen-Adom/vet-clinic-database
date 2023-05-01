@@ -30,8 +30,6 @@ Vet Clinic Database is a relational database to store animals' information, inse
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
 <summary>Database</summary>
   <ul>
@@ -43,8 +41,6 @@ Vet Clinic Database is a relational database to store animals' information, inse
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Database named vet-clinic**
 - **Table named animal**
 
@@ -54,19 +50,16 @@ Vet Clinic Database is a relational database to store animals' information, inse
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need postgres:
 
+ On Linux:
+ 
 ```sh
- ON Linux:
-
  sudo apt-get install postgresql postgresql-contrib libpq-dev
-
 ```
 
 On Windows
@@ -149,8 +142,6 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **Add Column To Table**
 - [ ] **Create Bridge Table**
 
@@ -170,8 +161,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project please don't forget to give me a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -179,8 +168,6 @@ If you like this project please don't forget to give me a star
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank microverse for providing me the template for this project
 
