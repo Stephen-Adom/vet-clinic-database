@@ -21,3 +21,39 @@ INSERT INTO animal (name, date_of_birth, escape_attempts, neutered, weight_kg, s
 INSERT INTO animal (name, date_of_birth, escape_attempts, neutered, weight_kg, species) VALUES ('Blossom', date '1998-10-13', 3, true, 17, NULL);
 
 INSERT INTO animal (name, date_of_birth, escape_attempts, neutered, weight_kg, species) VALUES ('Ditto', date '2022-05-14', 4, true, 22, NULL);
+
+INSERT INTO owner (full_name, age) VALUES ('Sam Smith', 34);
+
+INSERT INTO owner (full_name, age) VALUES ('Jennifer Orwell', 19);
+
+INSERT INTO owner (full_name, age) VALUES ('Bob', 45);
+
+INSERT INTO owner (full_name, age) VALUES ('Melody Pond', 77);
+
+INSERT INTO owner (full_name, age) VALUES ('Dean Winchester', 14);
+
+INSERT INTO owner (full_name, age) VALUES ('Jodie Whittaker', 38);
+
+INSERT INTO species(name) VALUES('Pokemon');
+
+INSERT INTO species(name) VALUES('Digimon');
+
+UPDATE animal SET owner_id = 1 WHERE name = 'Agumon';
+
+UPDATE animal SET owner_id = 2 WHERE name = 'Gabumon';
+
+UPDATE animal SET owner_id = 2 WHERE name = 'Pikachu';
+
+UPDATE animal SET owner_id = 3 WHERE name = 'Devimon';
+
+UPDATE animal SET owner_id = 3 WHERE name = 'Plantmon';
+
+UPDATE animal SET owner_id = 4 WHERE name = 'Charmander';
+
+UPDATE animal SET owner_id = 4 WHERE name = 'Squirtle';
+
+UPDATE animal SET owner_id = 4 WHERE name = 'Blossom';
+
+UPDATE animal SET owner_id = 5 WHERE name = 'Angemon';
+
+UPDATE animal SET owner_id = 5 WHERE name = 'Boarmon';

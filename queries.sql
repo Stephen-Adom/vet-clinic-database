@@ -44,3 +44,19 @@ SELECT neutered, MAX(escape_attempts) AS most_escape FROM animal GROUP BY neuter
 SELECT MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight FROM animal GROUP BY species;
 
 SELECT species, ROUND(AVG(escape_attempts), 2) AS avg_attempt FROM animal WHERE date_of_birth BETWEEN DATE '1990-01-01' AND '2000-12-31' GROUP BY species;
+
+UPDATE animal SET species_id = 2 WHERE name LIKE '%mon';
+
+UPDATE animal SET species_id = 1 WHERE name NOT LIKE '%mon';
+
+SELECT * FROM animal JOIN owner ON animal.owner_id = owner.id WHERE owner.full_name = 'Melody Pond';
+
+SELECT * FROM animal JOIN species ON animal.species_id = species.id WHERE species.name = 'Pokemon';
+
+SELECT full_name, age, name AS animal_name FROM owner LEFT JOIN animal ON owner.id = animal.owner_id;
+
+SELECT species.name, COUNT(species.name) FROM animal JOIN species ON animal.species_id = species.id GROUP BY species.name;
+
+SELECT animal.name AS animal, owner.full_name AS owner, species.name AS type FROM animal JOIN owner ON animal.owner_id = owner.id JOIN species ON animal.species_id = species.id WHERE owner.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
+
+SELECT owner.full_name, count(owner.full_name) FROM animal JOIN owner ON animal.owner_id = owner.id GROUP BY owner.full_name HAVING COUNT(owner.full_name) = (SELECT MAX(count) FROM (SELECT COUNT(owner.full_name) FROM animal JOIN owner ON animal.owner_id = owner.id GROUP BY owner.full_name) count);
