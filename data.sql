@@ -61,3 +61,11 @@ UPDATE animal SET owner_id = 4 WHERE name = 'Blossom';
 UPDATE animal SET owner_id = 5 WHERE name = 'Angemon';
 
 UPDATE animal SET owner_id = 5 WHERE name = 'Boarmon';
+
+INSERT INTO vet(name, age, date_of_birth) VALUES('William Tatcher', 45, date '2000-04-23');
+
+INSERT INTO vet(name, age, date_of_birth) VALUES('Maisy Smith', 26, date '2019-01-17');
+
+INSERT INTO vet(name, age, date_of_birth) VALUES('Stephanie Mendez', 64, date '1981-05-04');
+
+INSERT INTO vet(name, age, date_of_birth) VALUES('Jack Harkness', 38, date '2008-06-08');
