@@ -66,7 +66,7 @@ SELECT animal.name AS animal, vet.name AS vet_name, visit.date_of_visit FROM ani
 
 SELECT COUNT(vet.name) FROM animal JOIN visit ON animal.id = visit.animal_id JOIN vet ON vet.id = visit.vet_id WHERE vet.name = 'Stephanie Mendez';
 
-SELECT vet.name, vet.age, vet.date_of_birth, species.name AS specialization FROM vet LEFT JOIN specialization ON vet.id = specialization.vet_id LEFT JOIN species ON specialization.species_id = species.id;
+SELECT vet.name, vet.age, vet.date_of_graduation, species.name AS specialization FROM vet LEFT JOIN specialization ON vet.id = specialization.vet_id LEFT JOIN species ON specialization.species_id = species.id;
 
 SELECT animal.name AS animal, vet.name AS vet, visit.date_of_visit FROM animal JOIN visit ON animal.id = visit.animal_id JOIN vet ON visit.vet_id = vet.id WHERE vet.name = 'Stephanie Mendez' AND visit.date_of_visit BETWEEN date '2020-04-01' AND '2020-08-30';
 
@@ -74,7 +74,7 @@ SELECT animal.name, COUNT(animal.name) FROM animal JOIN visit ON animal.id = vis
 
 SELECT animal.name, visit.date_of_visit FROM animal JOIN visit ON animal.id = visit.animal_id JOIN vet ON vet.id = visit.vet_id WHERE vet.name = 'Maisy Smith' ORDER BY visit.date_of_visit LIMIT 1;
 
-SELECT animal.name, animal.date_of_birth, animal.escape_attempts, animal.neutered, animal.weight_kg, vet.name AS vet_name, vet.age AS vet_age, vet.date_of_birth AS vet_dob, visit.date_of_visit FROM animal JOIN visit ON animal.id = visit.animal_id JOIN vet ON vet.id = visit.vet_id ORDER BY visit.date_of_visit DESC LIMIT 1;
+SELECT animal.name, animal.date_of_birth, animal.escape_attempts, animal.neutered, animal.weight_kg, vet.name AS vet_name, vet.age AS vet_age, vet.date_of_graduation AS graduation, visit.date_of_visit FROM animal JOIN visit ON animal.id = visit.animal_id JOIN vet ON vet.id = visit.vet_id ORDER BY visit.date_of_visit DESC LIMIT 1;
 
 SELECT COUNT(*) FROM vet LEFT JOIN specialization ON vet.id = specialization.vet_id LEFT JOIN visit on vet.id = visit.vet_id WHERE specialization.species_id IS NULL;
 

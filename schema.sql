@@ -18,7 +18,7 @@ ALTER TABLE animal ADD COLUMN owner_id INT;
 
 ALTER TABLE animal ADD CONSTRAINT fk_owner FOREIGN KEY(owner_id) REFERENCES owner(id);
 
-CREATE TABLE vet(id BIGSERIAL PRIMARY KEY, name VARCHAR(150), age INT, date_of_birth DATE);
+CREATE TABLE vet(id BIGSERIAL PRIMARY KEY, name VARCHAR(150), age INT, date_of_graduation DATE);
 
 CREATE TABLE specialization(species_id INT, vet_id INT, PRIMARY KEY(species_id, vet_id));
 

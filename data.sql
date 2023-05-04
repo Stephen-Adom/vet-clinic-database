@@ -70,6 +70,12 @@ INSERT INTO vet(name, age, date_of_birth) VALUES('Stephanie Mendez', 64, date '1
 
 INSERT INTO vet(name, age, date_of_birth) VALUES('Jack Harkness', 38, date '2008-06-08');
 
+INSERT INTO specialization(species_id, vet_id) VALUES(1, 1);
+
+INSERT INTO specialization(species_id, vet_id) VALUES(1, 3);
+
+INSERT INTO specialization(species_id, vet_id) VALUES(2, 4);
+
 
 INSERT INTO visit(animal_id, vet_id, date_of_visit) VALUES(1, 1, date '2020-05-24');
 
