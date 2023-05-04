@@ -23,3 +23,7 @@ CREATE TABLE vet(id BIGSERIAL PRIMARY KEY, name VARCHAR(150), age INT, date_of_b
 CREATE TABLE specialization(species_id INT, vet_id INT, PRIMARY KEY(species_id, vet_id));
 
 CREATE TABLE visit(animal_id INT, vet_id INT, PRIMARY KEY(animal_id, vet_id));
+
+ALTER TABLE visit ADD COLUMN date_of_visit DATE;
+
+ALTER TABLE visit DROP CONSTRAINT visit_pkey;
