@@ -29,3 +29,10 @@ ALTER TABLE visit ADD COLUMN date_of_visit DATE;
 ALTER TABLE visit DROP CONSTRAINT visit_pkey;
 
 ALTER TABLE owner ADD COLUMN email VARCHAR(120);
+
+-- Add animal_id index
+CREATE INDEX visit_animal_id_asc ON visit(animal_id ASC);
+-- Add animal index
+CREATE INDEX owner_email_desc ON owner(email DESC);
+-- Add vet_id index
+CREATE INDEX visit_vet_id ON visit(vet_id) INCLUDE(id, animal_id, date_of_visit) WHERE vet_id = 2;
