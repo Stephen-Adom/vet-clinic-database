@@ -27,3 +27,5 @@ CREATE TABLE visit(animal_id INT, vet_id INT, PRIMARY KEY(animal_id, vet_id));
 ALTER TABLE visit ADD COLUMN date_of_visit DATE;
 
 ALTER TABLE visit DROP CONSTRAINT visit_pkey;
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
