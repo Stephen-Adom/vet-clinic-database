@@ -79,3 +79,9 @@ SELECT animal.name, animal.date_of_birth, animal.escape_attempts, animal.neutere
 SELECT COUNT(*) FROM vet LEFT JOIN specialization ON vet.id = specialization.vet_id LEFT JOIN visit on vet.id = visit.vet_id WHERE specialization.species_id IS NULL;
 
 SELECT species.name, COUNT(species.name) FROM vet JOIN visit ON visit.vet_id = vet.id JOIN animal ON animal.id = visit.animal_id JOIN species ON species.id = animal.species_id WHERE vet.name = 'Maisy Smith' GROUP BY species.name ORDER BY count DESC LIMIT 1;
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visit where animal_id = 4;
+
+EXPLAIN ANALYZE SELECT * FROM visit where vet_id = 2;
+
+EXPLAIN ANALYZE SELECT * FROM owner where email = 'owner_18327@mail.com';
