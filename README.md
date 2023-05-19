@@ -27,7 +27,7 @@
 
 # 📖 [Vet Clinic Database] <a name="about-project"></a>
 
-Vet Clinic Database is a relational database to store animals' information, insert data nd query data for processing
+Vet Clinic Database is a relational database to store animals' information, insert data and query data for processing
 
 ## 🛠 Built With <a name="built-with"></a>
 
