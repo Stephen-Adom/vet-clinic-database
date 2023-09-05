@@ -57,7 +57,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need postgres:
+In order to run this project you need Postgres:
 
  On Linux:
  
