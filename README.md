@@ -67,7 +67,7 @@ In order to run this project you need Postgres:
 
 On Windows
 
-Go to [postgres website](https://www.postgresql.org/) and download the installer and follow the installation process
+Go to [postgres website](https://www.postgresql.org/) download the installer and follow the installation process
 
 ### Setup
 
